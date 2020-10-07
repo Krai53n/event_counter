@@ -36,7 +36,6 @@ def count():
     '''Function which count period of time till event
     '''
     seconds = difference()
-    print(difference())
     minutes = seconds // 60
     seconds = seconds % 60
     hours = int(minutes // 60)
