@@ -7,6 +7,7 @@ import time
 TODO:
     + make event, not only New Year
     + make to check of difference between event and time in present
+    - make good exception
 '''
 
 ### CONSTANTS
