@@ -8,6 +8,7 @@ TODO:
     + make event, not only New Year
     + make to check of difference between event and time in present
     - make good exception
+    - descrive function less
 '''
 
 ### CONSTANTS
@@ -49,16 +50,27 @@ def difference():
     else:
         print('You paste not correct deadline\nPlease check it!'.upper())
 
+def less(var):
+    '''
+    '''
+    if var < 10:
+        var = '0' + str(var)
+    return var
+
 def count():
     '''Function which count period of time till event
     '''
     seconds = difference()
     minutes = seconds // 60
-    seconds = seconds % 60
+    seconds = int(seconds % 60)
     hours = int(minutes // 60)
     minutes = int(minutes % 60)
     days = int(hours // 24)
     hours = int(hours % 24)
+    days = less(days)
+    hours = less(hours)
+    minutes = less(minutes)
+    seconds = less(seconds)
     time_to_event = {
         'days': days,
         'hours': hours,
