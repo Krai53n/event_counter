@@ -8,7 +8,11 @@ TODO:
     + make event, not only New Year
     + make to check of difference between event and time in present
     - make good exception
-    - descrive function less
+    - describe function less
+    - make check of os
+    - make snow
+    - make README.md file
+    - learn guithub commits
 '''
 
 ### CONSTANTS
