@@ -73,5 +73,4 @@ def count():
         'minutes': minutes,
         'seconds': seconds,
     }
-
     return time_to_event
