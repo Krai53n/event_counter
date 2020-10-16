@@ -3,17 +3,6 @@
 
 import time
 
-'''
-TODO:
-    + make event, not only New Year
-    + make to check of difference between event and time in present
-    - make good exception
-    - describe function less
-    - make check of os
-    - make snow
-    - make README.md file
-    - learn guithub commits
-'''
 
 ### CONSTANTS
 DATE_WITH_NEXT_YEAR = '01', '01' # 1 - month, 2 - day
@@ -55,7 +44,10 @@ def difference():
         print('You paste not correct deadline\nPlease check it!'.upper())
 
 def less(var):
-    '''
+    '''Function give 0 ifnumber less then 10
+    for example we have '1" after this function
+    we will have '01'
+    argument of the function is number, for example '1'
     '''
     if var < 10:
         var = '0' + str(var)
