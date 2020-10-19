@@ -3,7 +3,8 @@
 
 from pyfiglet import Figlet as fig
 from time import sleep
-from os import system as sys
+from os import system
+from sys import platform as pl
 from random import choice
 from colorama import init
 from colorama import Fore, Style
@@ -23,9 +24,12 @@ def display(text = 'New Year?', font = FONT):
     print(custom_fig.renderText(text), end = '')
 
 def clear():
-    '''Function which clear
-    what was before'''
-    sys('clear')
+    '''Function clear what was before in
+    terminal and aslo check our OS'''
+    if pl == 'linux' or pl == 'linux2' or pl == 'darwin':
+        system('clear')
+    if pl == 'win32':
+        system('clear')
 
 
 if __name__ == '__main__':
