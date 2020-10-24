@@ -45,6 +45,5 @@ if __name__ == '__main__':
                                      date['hours'],
                                      date['minutes'],
                                      date['seconds'])
-        # 84:09:55:59
         display(date)
         sleep(1)
