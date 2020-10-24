@@ -37,7 +37,6 @@ if __name__ == '__main__':
         from count_time_to_event import count
         colors = ('RED', 'GREEN', 'YELLOW', 'BLUE',
                   'MAGENTA', 'CYAN', 'WHITE')
-        r_clr = eval('Fore.RED')
         clear()
         print(eval('Fore.{}'.format(choice(colors))), end = '')
         date = count()
