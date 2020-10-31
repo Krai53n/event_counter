@@ -6,9 +6,6 @@ Program build on Python.
  - You can choose your own  event
  - you can choose all fonts from pyfiglet
 
-
-<img src="https://github.com/Krai53n/new_year/blob/main/images/2020-10-10_22:21:23.png">
-
 ### Requirements
  - pyfiglet
  - colorama
