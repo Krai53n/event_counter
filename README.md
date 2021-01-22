@@ -1,4 +1,4 @@
-## EVENT COUNTER
+## Event counter
 Script that count time to event
 
 
