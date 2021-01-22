@@ -1,17 +1,8 @@
 ## EVENT COUNTER
-As we get ready to New Year, I take this amazing event!
-Program build on Python.
+Script that count time to event
 
-### Features
- - You can choose your own  event
- - you can choose all fonts from pyfiglet
 
 ### Requirements
- - pyfiglet
- - colorama
 ```sh
-pip install pyfiglet
-```
-```sh
-pip install colorama
+pip install -r requirements.txt
 ```
