@@ -29,7 +29,7 @@ def clear():
     if pl == 'linux' or pl == 'linux2' or pl == 'darwin':
         system('clear')
     if pl == 'win32':
-        system('clear')
+        system('cls')
 
 
 if __name__ == '__main__':
