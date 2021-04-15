@@ -1,3 +1,4 @@
+# ctte - count time to event
 # author: Krai53n
 # date: 05.10.25
 
@@ -16,9 +17,11 @@ def determine_event_date(date_with_next_year = DATE_WITH_NEXT_YEAR_OR_NOT):
     '''
     if date_with_next_year == 1:
         year = time.localtime(time.time())[0] + 1
-        date_event = '{}-{}-{} 00:00:00'.format(year,
-                                                DATE_WITH_NEXT_YEAR[0],
-                                                DATE_WITH_NEXT_YEAR[1])
+        date_event = '{}-{}-{} 00:00:00'.format(
+            year,
+            DATE_WITH_NEXT_YEAR[0],
+            DATE_WITH_NEXT_YEAR[1]
+        )
     else:
         date_event = DATE_DEADLINE + ' 00:00:00'
     return date_event
@@ -27,8 +30,10 @@ def count_start_of_epoch_to_event():
     '''Function count seconds with start of epoch
     till our date
     '''
-    seconds = time.mktime(time.strptime(determine_event_date(),
-                                        '%Y-%m-%d %H:%M:%S'))
+    seconds = time.mktime(time.strptime(
+        determine_event_date(),
+        '%Y-%m-%d %H:%M:%S'
+    ))
     return seconds
 
 def difference():

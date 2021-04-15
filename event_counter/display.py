@@ -41,9 +41,10 @@ if __name__ == '__main__':
         print(eval('Fore.{}'.format(choice(colors))), end = '')
         date = count()
         date = '{}:{}:{}:{}'.format(
-                                     date['days'],
-                                     date['hours'],
-                                     date['minutes'],
-                                     date['seconds'])
+            date['days'],
+            date['hours'],
+            date['minutes'],
+            date['seconds']
+        )
         display(date)
         sleep(1)
